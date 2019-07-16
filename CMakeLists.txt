@@ -14,10 +14,11 @@ add_library(clocker SHARED
 )
 
 set_target_properties(clocker PROPERTIES VERSION ${PROJECT_VERSION})
+set_target_properties(clocker PROPERTIES PUBLIC_HEADER "inc/Clocker.hpp")
 
 install(TARGETS clocker
     LIBRARY DESTINATION ${CMAKE_INSTALL_LIBDIR}
-    PUBLIC_HEADER DESTINATION ${CMAKE_INSTALL_INCLUDEDIR})
+    PUBLIC_HEADER DESTINATION /usr/local/include)
 
 add_compile_options(-std=c++11)
 
