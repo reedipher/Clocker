@@ -1,8 +1,7 @@
-#include <iostream>
 #include <unistd.h>
 #include <chrono>
 #include <vector>
-#include <fstream>
+#include <string>
 
 struct logEvent {
     std::string info;

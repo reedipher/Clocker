@@ -1,5 +1,8 @@
 #include "Clocker.hpp"
 
+#include <iostream>
+#include <fstream>
+
 // Constructor
 Clocker::Clocker(std::string name)
 {

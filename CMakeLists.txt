@@ -3,6 +3,7 @@ cmake_minimum_required(VERSION 3.9)
 
 project(clocker VERSION 1.0 DESCRIPTION "Tool to help time things")
 include(GNUInstallDirs)
+include_directories(./inc)
 set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY /usr/local/lib/)
 set(CMAKE_LIBRARY_OUTPUT_DIRECTORY /usr/local/lib/)
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
